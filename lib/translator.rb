@@ -23,6 +23,9 @@ def get_japanese_emoticon(file_path, english_emoticon)
   
 end
 
-#def get_english_meaning
+def get_english_meaning (file_path, japanese_emoticon)
+  call_library = load_library(file_path)
+  english_result_emoticon = call_library["get_emoticon"][japanese_emoticon]
+  english_result_emoticon ? english_result_emoticon :
   # code goes here
-#end
+end
