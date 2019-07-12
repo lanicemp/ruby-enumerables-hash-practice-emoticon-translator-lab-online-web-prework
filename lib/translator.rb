@@ -14,7 +14,7 @@ end
 
 def get_japanese_emoticon(file_path, english_emoticon)
   call_library = load_library(file_path)
-  result = call_library["get_emoticon"][emoticon]
+  japanese_result_emoticon = call_library["get_emoticon"][english_emoticon]
   result ? result : "Sorry, that emoticon was not found"
   #above is a terinary operator and it means if the result is true return the left side of the colon.  But if its false 
   #retun the right side of the colon. Terinary does not need an end. 
